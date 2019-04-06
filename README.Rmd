@@ -1,13 +1,11 @@
 ---
-title: "README"
+title: "Craft Beer Name Generator"
 output: md_document
 ---
 
   ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-# Craft Beer Name Generator
 
 Makes dumb fake beer names
 
