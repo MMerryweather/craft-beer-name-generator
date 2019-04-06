@@ -12,29 +12,101 @@ source(here::here("generator.R"))
 
 data.frame(n = 1:20) %>%
   group_by(n) %>%
-  mutate(Beer = purrr::map_chr(n, ~generate_name(actual_beers = F))) %>%
+  mutate(Beer = purrr::map_chr(n, ~generate_name(actual_beers = T))) %>%
   knitr::kable(format = "markdown")
 ```
 
-|    n| Beer                                                   |
-|----:|:-------------------------------------------------------|
-|    1| Mash Dainton's Hazy Craze Jedi Double                  |
-|    2| Dog Newstead's Pale Ale Growler Sour                   |
-|    3| Modus Operandi White Rabbit's Ackbar Red Butcher Aged  |
-|    4| Rocky Ridge Australian's Elsie Milk Stout Ale Berliner |
-|    5| Company's Ipl Birds Egland                             |
-|    6| Akasha's Door Australian String Super Ipa              |
-|    7| 2's Gold Dark Ipa                                      |
-|    8| Usa Colonial's Brown Ale Robust Porter Sweet           |
-|    9| Shed Feral Mornington Peninsula's Eye Pale Ale         |
-|   10| Australian Brewery Bucket Boys Bout Mized              |
-|   11| Nelson Yak Ales Ipa Obsession Session Farmhouse        |
-|   12| Coopers Cricketers Arms Gatherer 2017 Ipa              |
-|   13| Rabbit's Ale Growler Keller Door Ipa                   |
-|   14| Pirate Life Mornington Peninsula's Miss Pinky Hopped   |
-|   15| Pact's Draught Juicy Banger California                 |
-|   16| Pact Moon Dog's Door Beer                              |
-|   17| Roads Harvest Beer                                     |
-|   18| Mountain Goat Birds Sick Puppy's Coast Ipa England     |
-|   19| Nation James Door Weisse                               |
-|   20| Coopers Bridge's Rye Urban Pale Fruit                  |
+<table>
+<colgroup>
+<col width="4%" />
+<col width="95%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">n</th>
+<th align="left">Beer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Blackmans 2 Brothers Creatures Inquest Farmhouse British Golden Ale</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">Otherside Philter's Fog American Lager</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">Modus Operandi's Quarter American Amber Ale</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">Stone Wood Grifter's Modus Operandi American IPA</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">Pines Ackbar Red Brown 8bit New England IPA</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="left">Beacon's Double Ipa Squish Specialty IPA</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="left">Australian Beer Company Australian's Mate Bout Feral</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="left">Peninsula's Operandi Cascadian Wood-Aged Beer</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">Shed Feral James Squire's Juicy Lil Neipa Blood Mized Fermentation Sour Beer</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">Stockade's Pale Pale Cheeky American Pale ale</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">Mornington's Porter Evil Eye Tenant Noisy Minor Admiral Pale Lager</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="left">Beer Company's Neipa Lupulin Fog English Brown Ale</td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="left">Stone Wood's Pale Ale Ipa Future Ale American Pale Ale</td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="left">Coconspirators Mornington Peninsula's Mast Hornet Ipa Mosaic Sonic Prayer Sprocket Double IPA</td>
+</tr>
+<tr class="odd">
+<td align="right">15</td>
+<td align="left">Pony's Ale Barley Griffin Breakwater American Brown Ale</td>
+</tr>
+<tr class="even">
+<td align="right">16</td>
+<td align="left">Crow Stone Wood Grifter's Door Australian Gose</td>
+</tr>
+<tr class="odd">
+<td align="right">17</td>
+<td align="left">Feral Mornington's Coast Ipa Winter Seasonal Beer</td>
+</tr>
+<tr class="even">
+<td align="right">18</td>
+<td align="left">Gage's Fifty Lashes Pacific Ale Beerhall Benstpoke Crankshaft Gose</td>
+</tr>
+<tr class="odd">
+<td align="right">19</td>
+<td align="left">Creatures Ale Bright Ale Sour Miss Pinky Passion Puss International Pale Lager</td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="left">Lies Hop Nation's Ipa Obsession Pale Ale</td>
+</tr>
+</tbody>
+</table>
