@@ -1,5 +1,5 @@
-knitr::knit(here::here("README.rmd"))
-
+file.remove(here::here("README.md"))
+knitr::knit(here::here("README.Rmd"))
 rmarkdown::render(
   here::here("README.md"),
   output_format = rmarkdown::github_document(),

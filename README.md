@@ -1,16 +1,12 @@
----
-  title: "README"
-output: md_document
----
+README
+================
 
-  
-
-# Craft Beer Name Generator
+Craft Beer Name Generator
+=========================
 
 Makes dumb fake beer names
 
-
-```r
+``` r
 pacman::p_load(dplyr)
 source(here::here("generator.R"))
 
@@ -20,27 +16,25 @@ data.frame(n = 1:20) %>%
   knitr::kable(format = "markdown")
 ```
 
-
-
-|  n|Beer                                                                           |
-|--:|:------------------------------------------------------------------------------|
-|  1|Shed Thirsty Crow's American Pale American Pale Ale Common                     |
-|  2|Boys Bacchus Beacon Ale                                                        |
-|  3|Arms Hop's Pavlova Ale                                                         |
-|  4|James Kolsch Refreshing Egland                                                 |
-|  5|Birds Henrys Howl Summer Australian                                            |
-|  6|Goat's Griffin Breakwater Cloud Catcher Ipa                                    |
-|  7|Green's Grizz Harvest Jasper Ale Pale Ale                                      |
-|  8|Dainton La Sirene's Wild Yak Xpa Beer                                          |
-|  9|Chi Cho Mane's Newtowner Fifty Lashes Pacific Ale Egland Ipa                   |
-| 10|Rabbit Bridge Road's Attack Killer Hops Double Hefeweizen                      |
-| 11|Boatrocker 4 Pines Lager Lay Day Ipa                                           |
-| 12|Bacchus Mountain Goat Creatures Ipa Pale                                       |
-| 13|Nation's Hop Thief 8 Ipa                                                       |
-| 14|Nelson's Mimas Butcher Mornington Mimas Butcher Mornington Mimas Gose          |
-| 15|Mismatch's Mast Hornet Beer                                                    |
-| 16|James Squire Kaiju Pact's Ale Pirate Life Helles                               |
-| 17|Hopco Tas Pirate's Boatrocker Ramjet 2017 3 Quarter Time Vanilla Malt American |
-| 18|Modus Operandi Fortitude Nail Balter Cricketers India Pale Ale Ale             |
-| 19|Ridge's Beer Peach Melba Pavlova Beer                                          |
-| 20|Akasha Feral Mornington's Hopsmith Hornet Season Ipa                           |
+|    n| Beer                                                   |
+|----:|:-------------------------------------------------------|
+|    1| Mash Dainton's Hazy Craze Jedi Double                  |
+|    2| Dog Newstead's Pale Ale Growler Sour                   |
+|    3| Modus Operandi White Rabbit's Ackbar Red Butcher Aged  |
+|    4| Rocky Ridge Australian's Elsie Milk Stout Ale Berliner |
+|    5| Company's Ipl Birds Egland                             |
+|    6| Akasha's Door Australian String Super Ipa              |
+|    7| 2's Gold Dark Ipa                                      |
+|    8| Usa Colonial's Brown Ale Robust Porter Sweet           |
+|    9| Shed Feral Mornington Peninsula's Eye Pale Ale         |
+|   10| Australian Brewery Bucket Boys Bout Mized              |
+|   11| Nelson Yak Ales Ipa Obsession Session Farmhouse        |
+|   12| Coopers Cricketers Arms Gatherer 2017 Ipa              |
+|   13| Rabbit's Ale Growler Keller Door Ipa                   |
+|   14| Pirate Life Mornington Peninsula's Miss Pinky Hopped   |
+|   15| Pact's Draught Juicy Banger California                 |
+|   16| Pact Moon Dog's Door Beer                              |
+|   17| Roads Harvest Beer                                     |
+|   18| Mountain Goat Birds Sick Puppy's Coast Ipa England     |
+|   19| Nation James Door Weisse                               |
+|   20| Coopers Bridge's Rye Urban Pale Fruit                  |

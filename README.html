@@ -31,9 +31,9 @@ body {
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pacman<span class="op">::</span><span class="kw">p_load</span>(dplyr)
 <span class="kw">source</span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;generator.R&quot;</span>))
 
-<span class="kw">data.frame</span>(<span class="dt">n =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">10</span>) <span class="op">%&gt;%</span>
+<span class="kw">data.frame</span>(<span class="dt">n =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">20</span>) <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">group_by</span>(n) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Beer =</span> purrr<span class="op">::</span><span class="kw">map_chr</span>(n, <span class="op">~</span><span class="kw">generate_name</span>(<span class="dt">actual_beers =</span> F))) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Beer =</span> purrr<span class="op">::</span><span class="kw">map_chr</span>(n, <span class="op">~</span><span class="kw">generate_name</span>(<span class="dt">actual_beers =</span> F))) <span class="op">%&gt;%</span>
 <span class="st">  </span>knitr<span class="op">::</span><span class="kw">kable</span>(<span class="dt">format =</span> <span class="st">&quot;markdown&quot;</span>)</code></pre></div>
 <table>
 <thead>
@@ -45,43 +45,83 @@ body {
 <tbody>
 <tr class="odd">
 <td align="right">1</td>
-<td align="left">Squire's Blood Orange 3 Bolt American Pale</td>
+<td align="left">Mash Dainton's Hazy Craze Jedi Double</td>
 </tr>
 <tr class="even">
 <td align="right">2</td>
-<td align="left">Kosciuszko Bridge's Pilsner Scorcher British Golden</td>
+<td align="left">Dog Newstead's Pale Ale Growler Sour</td>
 </tr>
 <tr class="odd">
 <td align="right">3</td>
-<td align="left">Mash Akasha Feral's Diesel Hop Culture Hopsmith Sparkling</td>
+<td align="left">Modus Operandi White Rabbit's Ackbar Red Butcher Aged</td>
 </tr>
 <tr class="even">
 <td align="right">4</td>
-<td align="left">Burleigh's Squeeze Hazelnut Brown Ale Ale</td>
+<td align="left">Rocky Ridge Australian's Elsie Milk Stout Ale Berliner</td>
 </tr>
 <tr class="odd">
 <td align="right">5</td>
-<td align="left">La Sirene's Red Brown Ale Otherside Ale</td>
+<td align="left">Company's Ipl Birds Egland</td>
 </tr>
 <tr class="even">
 <td align="right">6</td>
-<td align="left">Dog's Ale Pale Ale Otherside Harvest Jasper Beer Specialty</td>
+<td align="left">Akasha's Door Australian String Super Ipa</td>
 </tr>
 <tr class="odd">
 <td align="right">7</td>
-<td align="left">Ballast Usa's Brown Australian</td>
+<td align="left">2's Gold Dark Ipa</td>
 </tr>
 <tr class="even">
 <td align="right">8</td>
-<td align="left">Green Beacon Moon's Yeah Karma Citra Australian</td>
+<td align="left">Usa Colonial's Brown Ale Robust Porter Sweet</td>
 </tr>
 <tr class="odd">
 <td align="right">9</td>
-<td align="left">Cho's Hazy Craze Jedi Juice Weisse</td>
+<td align="left">Shed Feral Mornington Peninsula's Eye Pale Ale</td>
 </tr>
 <tr class="even">
 <td align="right">10</td>
-<td align="left">Dog's Minor Admiral Ackbar Red Butcher Golden</td>
+<td align="left">Australian Brewery Bucket Boys Bout Mized</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">Nelson Yak Ales Ipa Obsession Session Farmhouse</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="left">Coopers Cricketers Arms Gatherer 2017 Ipa</td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="left">Rabbit's Ale Growler Keller Door Ipa</td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="left">Pirate Life Mornington Peninsula's Miss Pinky Hopped</td>
+</tr>
+<tr class="odd">
+<td align="right">15</td>
+<td align="left">Pact's Draught Juicy Banger California</td>
+</tr>
+<tr class="even">
+<td align="right">16</td>
+<td align="left">Pact Moon Dog's Door Beer</td>
+</tr>
+<tr class="odd">
+<td align="right">17</td>
+<td align="left">Roads Harvest Beer</td>
+</tr>
+<tr class="even">
+<td align="right">18</td>
+<td align="left">Mountain Goat Birds Sick Puppy's Coast Ipa England</td>
+</tr>
+<tr class="odd">
+<td align="right">19</td>
+<td align="left">Nation James Door Weisse</td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="left">Coopers Bridge's Rye Urban Pale Fruit</td>
 </tr>
 </tbody>
 </table>
