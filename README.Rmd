@@ -1,0 +1,25 @@
+---
+title: "README"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Craft Beer Name Generator
+
+Makes dumb fake beer names
+
+```{r df}
+pacman::p_load(dplyr)
+source(here::here("generator.R"))
+
+data.frame(n = 1:10) %>%
+  group_by(n) %>%
+  mutate(Beer = purrr::map_chr(n, ~generate_name(actual_beers = F))) %>% 
+  knitr::kable(format = "markdown")
+
+
+
+```
